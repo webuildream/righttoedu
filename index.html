@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rigth To Educations</title>
+
+
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script data-ad-client="ca-pub-1617575655015846" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  </head>
+
+  <body>
+
+    <div class="header">
+      <h1>Free Laptops & Mobiles</h1>
+      <h3>Everyone deserves education!</h3>
+    </div>
+
+
+    <div class="container-fluid block1">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 lpbg">
+          <img src="res/laptop1.png" class="laptop" alt="">
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h4>Rigth To Education Ministry of Country</h4><br>
+          <h6>We belive that each and every student deserves rigth to eudcation.</h6><br>
+          <h6>During these tough times we want to make sure that each student gets the best education possible.</h6><br>
+          <h5>So we want to give you laptops for FREE!!!</h5>
+        </div>
+        <div class="col-lg-4 col-md-4 lpbg">
+          <img src="res/laptop2.png" class="laptop" alt="">
+        </div>
+      </div>
+    </div>
+
+<div class="timer">
+    <q id="demo"></q>
+</div>
+
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 10000* 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
+
+    <div class="form block2">
+    			<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+    <!-- STUDENT DETAILS -->
+    	<div class="" style="background: #00416d; width: auto;">
+    		<h2 style="color: white; text-align: center;">Student Details</h2>
+    	</div>
+    			 <a>First Name: </a> <input type="text" placeholder="Student First Name*" name="fname"><br>
+    			 <a>Last Name: </a> <input type="text" placeholder="Student Last Name*" name="lname"><br><br>
+    			 <a>DOB: </a> <input type="date" placeholder="DOB" name="DOB"><br><br>
+    			 <a>Address: </a> <input type="text" placeholder="Residency Address*" name="fname">	 <input type="text" placeholder="City*" name="fname">	 <input type="text" placeholder="Select A Country*" name="fname"><br><br>
+    			 <a>Grade selection: </a> <input type="text" placeholder="Present Grade*" name="fname"> <input type="text" placeholder="Accedemic Year*" name="fname"><br>
+           <a>Father's E-mail: </a> <input type="text" placeholder="Father's E-mail*" name="fname"><br><br>
+            <input type="submit" value="Submit">
+            <br>
+         </form>
+       </div>
+
+
+       <div class="center">
+       	<footer>
+          <h2>Laptop delivery will start from 1st October</h2>
+          <h3>Keep Checking your Inbox</h3>
+       </footer>
+       </div>
+
+  </body>
+</html>
